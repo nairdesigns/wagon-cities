@@ -1,4 +1,5 @@
 import React from "react";
+import CityList from "../containers/city_list";
 
 const cities = [
   { name: "Paris", address: "16 Villa Gaudelet, 75011 Paris", slug: "paris" },
@@ -11,6 +12,11 @@ const cities = [
 ];
 
 const App = () => {
-  return <div className="app">yoooo{/* <CityList cities={cities/} /> */}</div>;
+  return (
+    <div className="app">
+      yoooo
+      <CityList />
+    </div>
+  );
 };
 export default App;
