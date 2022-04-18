@@ -11,8 +11,11 @@ class City extends Component {
   };
   render() {
     return (
-      <div className="active-city" onClick={this.handleClick}>
-        <ul>{this.props.city.name}</ul>
+      <div className="active-city">
+        <a role="button" onClick={this.handleClick} tabIndex={0}>
+          {" "}
+          <ul>{this.props.city.name}</ul>
+        </a>
       </div>
     );
   }
