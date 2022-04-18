@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import CityList from "../containers/city_list";
 
 const cities = [
@@ -11,12 +11,18 @@ const cities = [
   },
 ];
 
-const App = () => {
-  return (
-    <div className="app">
-      yo
-      <CityList />
-    </div>
-  );
-};
-export default App;
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      cities,
+    };
+  }
+  render() {
+    return (
+      <div>
+        <CityList />
+      </div>
+    );
+  }
+}
