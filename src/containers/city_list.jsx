@@ -10,11 +10,11 @@ const CityList = (props) => {
     return props.cities.map((city) => {
       return (
         <City
-        // city={city}
-        // key={city.lat}
-        // selected={city.name === props.selectedCity.name}
-        // index={index}
-        // selectCity={props.selectCity}
+          city={city}
+          // key={city.lat}
+          // selected={city.name === props.selectedCity.name}
+          // index={index}
+          // selectCity={props.selectCity}
         />
       );
     });

@@ -9,7 +9,7 @@ class City extends Component {
     return (
       <h1>
         this is a city
-        {/* {this.props.cities.name} */}
+        {this.props.city.name}
       </h1>
     );
   }
