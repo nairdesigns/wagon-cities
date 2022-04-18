@@ -11,7 +11,7 @@ const CityList = (props) => {
       return (
         <City
           city={city}
-          // key={city.lat}
+          key={city.name}
           // selected={city.name === props.selectedCity.name}
           index={index}
           selectCity={props.selectCity}
