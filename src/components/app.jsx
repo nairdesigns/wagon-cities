@@ -14,7 +14,7 @@ const cities = [
 const App = () => {
   return (
     <div className="app">
-      yoooo
+      yo
       {/* <CityList /> */}
     </div>
   );
