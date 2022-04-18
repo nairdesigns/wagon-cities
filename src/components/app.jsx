@@ -19,15 +19,15 @@ export default class App extends Component {
     };
   }
 
-  selectFlat = (index) => {
-    this.setState({ selectedFlat: flats[index] });
-    console.log(flats[index]);
+  selectCity = (index) => {
+    this.setState({ selectedFlat: cities[index] });
+    console.log(cities[index]);
   };
 
   render() {
     return (
       <div>
-        <CityList cities={this.state.cities} selectFlat={this.selectFlat} />
+        <CityList cities={this.state.cities} selectCity={this.selectCity} />
       </div>
     );
   }
