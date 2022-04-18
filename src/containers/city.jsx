@@ -5,12 +5,15 @@ import React, { Component } from "react";
 // import City from "../containers/city";
 
 class City extends Component {
+  handleClick = () => {
+    this.props.selectCity(this.props.index);
+    console.log("clicked!");
+  };
   render() {
     return (
-      <h1>
-        this is a city
-        {this.props.city.name}
-      </h1>
+      <div className="active-city" onClick={this.handleClick}>
+        <ul>{this.props.city.name}</ul>
+      </div>
     );
   }
 }
