@@ -9,12 +9,13 @@ const CityList = (props) => {
   const renderList = () => {
     // return props.cities.map((city) => {
     return (
-      <City />
+      <City
       // city={city}
       // key={city.lat}
       // selected={city.name === props.selectedCity.name}
       // index={index}
       // selectCity={props.selectCity}
+      />
     );
     // });
   };
