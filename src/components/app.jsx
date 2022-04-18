@@ -11,10 +11,6 @@ const cities = [
 ];
 
 const App = () => {
-  return (
-    <div className="app">
-      <CityList cities={cities} />
-    </div>
-  );
+  return <div className="app">yoooo{/* <CityList cities={cities/} /> */}</div>;
 };
 export default App;
