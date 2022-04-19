@@ -1,12 +1,12 @@
 import React from "react";
-// import { connect } from "react-redux";
-// import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 
 // import City from "../containers/city";
 import City from "./city";
 
-const CityList = (props) => {
-  const renderList = () => {
+class CityList extends Component {
+  renderList = () => {
     return props.cities.map((city, index) => {
       return (
         <City
