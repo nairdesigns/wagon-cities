@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 const ActiveCity = (props) => {
   if (!props.activeCity) {
@@ -17,12 +18,12 @@ const ActiveCity = (props) => {
       <img src={url} width="100%" alt="city" />
     </div>
   );
-
-  function mapStateToProps(state) {
-    return {
-      activeCity: state.activeCity,
-    };
-  }
 };
 
-export default ActiveCity;
+function mapStateToProps(state) {
+  return {
+    activeCity: state.activeCity,
+  };
+}
+
+export default connect(mapStateToProps)(ActiveCity);
