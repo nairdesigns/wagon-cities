@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-// import { bindActionCreators } from "redux";
+import { bindActionCreators } from "redux";
 
 // import City from "../containers/city";
 import City from "./city";
@@ -8,15 +8,7 @@ import City from "./city";
 class CityList extends Component {
   renderList = () => {
     return this.props.cities.map((city) => {
-      return (
-        <City
-          city={city}
-          key={city.name}
-          // selected={city.name === this.props.selectedCity.name}
-          // index={index}
-          selectCity={this.props.selectCity}
-        />
-      );
+      return <City city={city} key={city.name} />;
     });
   };
   render() {
