@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-// import { connect } from "react-redux";
-// import { bindActionCreators } from "redux";
-
-// import City from "../containers/city";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 
 class City extends Component {
   handleClick = () => {
