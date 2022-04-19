@@ -4,7 +4,7 @@ import { bindActionCreators } from "redux";
 
 class City extends Component {
   handleClick = () => {
-    this.props.selectCity(this.props.index);
+    this.props.selectCity(this.props.city);
     console.log("clicked!");
   };
   render() {
@@ -19,4 +19,7 @@ class City extends Component {
   }
 }
 
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ selectCity }, dispatch);
+}
 export default City;
