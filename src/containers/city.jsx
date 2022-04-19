@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+import selectCity from "../actions/index";
 
 class City extends Component {
   handleClick = () => {
@@ -22,4 +23,5 @@ class City extends Component {
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ selectCity }, dispatch);
 }
-export default City;
+
+export default connect(null, mapDispatchToProps)(City);
