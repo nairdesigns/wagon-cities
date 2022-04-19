@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
@@ -19,8 +19,9 @@ class CityList extends Component {
       );
     });
   };
-
-  return <div className="cities">{renderList()}</div>;
-};
+  render() {
+    return <div className="cities">{this.renderList()}</div>;
+  }
+}
 
 export default CityList;
