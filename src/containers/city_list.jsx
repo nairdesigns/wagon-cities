@@ -7,14 +7,14 @@ import City from "./city";
 
 class CityList extends Component {
   renderList = () => {
-    return props.cities.map((city, index) => {
+    return this.props.cities.map((city, index) => {
       return (
         <City
           city={city}
           key={city.name}
-          // selected={city.name === props.selectedCity.name}
+          // selected={city.name === this.props.selectedCity.name}
           index={index}
-          selectCity={props.selectCity}
+          selectCity={this.props.selectCity}
         />
       );
     });
@@ -23,5 +23,10 @@ class CityList extends Component {
     return <div className="cities">{this.renderList()}</div>;
   }
 }
+function mapStateToProps(state) {
+  return {
+    cities: state.cities,
+  };
+}
 
-export default CityList;
+export default connect(mapStateToProps)(CityList);
