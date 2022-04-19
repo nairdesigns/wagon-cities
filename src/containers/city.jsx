@@ -11,7 +11,7 @@ class City extends Component {
   };
   render() {
     return (
-      <div className="active-city">
+      <div className="city">
         <a role="button" onClick={this.handleClick} tabIndex={0}>
           {" "}
           <ul>{this.props.city.name}</ul>

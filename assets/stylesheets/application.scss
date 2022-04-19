@@ -10,6 +10,14 @@ body {
   .cities {
     width: 30%;
   }
+  .city {
+    border: 1px solid #ddd;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    // text-align: center;
+    vertical-align: middle;
+  }
   .active-city {
     width: 70%;
     margin-left: 20px;
@@ -26,4 +34,13 @@ body {
 .list-group-item {
   background-color: transparent;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
 }
